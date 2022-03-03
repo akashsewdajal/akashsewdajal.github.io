@@ -26,7 +26,11 @@
             gtag('js', new Date());
             gtag('config', 'UA-206293705-2');
         </script>
-
+                <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
             <style type="text/css">
     * {
   margin: 0;
@@ -34,10 +38,7 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-}   
-#form1 {
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,13 +68,16 @@ form div {
   margin-bottom: 15px;
 }
 
-input:focus {
+input:focus, textarea:focus {
   border: 2px solid #f2796e;
 }
 
 form div i {
   position: absolute;
-  padding: 10px;
+  padding:10px;
+  float: left;
+
+
 }
 
 .failure-icon,
@@ -91,8 +95,8 @@ form div i {
 }
 .success-icon,
 .failure-icon {
-  right: 0;
-  opacity: 0;
+  right: 100;
+  opacity: 100;
 }
 button {
   margin-top: 15px;
@@ -280,7 +284,8 @@ button {
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="form1">
+                        <form id="form1" class="form">
+                            <div class="container">
                 
                             <div>
                                 <label for="username">Naam</label>
@@ -335,6 +340,7 @@ button {
                                 
                            
                             <button id="btn" type="submit">Submit</button>
+                            </div>
                         </form>
                     </div>
                 </div>
