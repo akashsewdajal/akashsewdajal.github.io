@@ -26,66 +26,89 @@
 
           gtag('config', 'G-MSCV87ELXL');
         </script>
-                <link
-                  rel="stylesheet"
-                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-                  crossorigin="anonymous"/>
-    
-        <style type="text/css">
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
+       <style type="text/css">
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        body {
-          font-family: sans-serif;
-        }   
-        #form1 {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          max-width: 400px;
-          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-          padding: 50px;
-        }
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  #box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
 
-        form div input, textarea {
-          width: 100%;
-          height: 40px;
-          border-radius: 8px;
-          outline: none;
-          border: 4px solid #c4c4c4;
-          padding: 0 30px;
-          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-        }
+form div input, textarea {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: 4px solid #c4cf
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 
-        label {
-          display: block;
-          margin-bottom: 5px;
-        }
+}
 
-        form div {
-          position: relative;
-          margin-bottom: 15px;
-        }
+label {
+  display: block;
+  margin-bottom: 5px;
+}
 
-        input:focus {
-          border: 2px solid #f2796e;
-        }
+form div {
+  position: relative;
+  margin-bottom: 15px;
+}
 
-        form div i {
-          position: absolute;
-          padding: 10px;
-        }
+input:focus, textarea:focus {
+  border: 2px solid #f2796e;
+}
 
-        .failure-icon,
-        .error {
-          color: red;
-        }
+form div i {
+  position: absolute;
+  padding: 0px;
+  padding:10px;
+  border: 2px solid yellow;
+  float: left;
 
-        .success-icon {
-          color: green;
+
+}
+
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+.success-icon,
+.failure-icon {
+  right: 100;
+  opacity: 100;
+}
+button {
+  margin-top: 15px;
+  width: 100%;
+  height: 45px;
+  background-color: #f2796e;
+  border: 2px solid #f2796e;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+
+    </style>         color: green;
         }
 
         .error {
@@ -267,7 +290,7 @@
                         <!-- * * SB Forms Contact Form * *-->
                         <!-- * * * * * * * * * * * * * * *-->
                         <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
+                        <!-- To make this form functional, sign u<div class="container">p at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
                         <form id="form1" class="form">
@@ -307,7 +330,8 @@
                             
                             </div>
                             <div>
-                                <label for="bericht">Bericht</label>
+                                type="text"
+                                    <label for="bericht">Bericht</label>
                                 <i class="far fa-envelope"></i>
                                 
                                 <textarea class="form" 
@@ -320,9 +344,8 @@
                                 <i class="fas fa-exclamation-circle failure-icon"></i>
                                 <i class="far fa-check-circle success-icon"></i>
                                 
-                                <div class="error"></div>
-                            </div>
-                                
+                                                           </div>
+                  </div>       
                            
                             <button id="btn" type="submit">Submit</button>
                            
