@@ -16,7 +16,7 @@
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../css/styles.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206293705-2">
         </script>
@@ -32,7 +32,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* begin van het formulier */ 
 form {
   display: flex;
   flex-direction: column;
@@ -70,7 +70,7 @@ form div i {
   position: absolute;
   padding: 0px;
   padding:10px;
-  border: 2px solid yellow;
+  border: 2px solid cyan;
   float: left;
 
 
@@ -273,72 +273,63 @@ button {
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div class="col-lg-6">
-                        <!-- * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign u<div class="container">p at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="form1" class="form">
-                            
-                
+
+                <!-- begin van het formulier-->
+                <form id="form1">
                             <div>
                                 <label for="username">Naam</label>
                                 <i class="fas fa-user"></i>
-                                
                                 <input
                                     type="text"
                                     name="username"
                                     id="username"
-                                    placeholder="Jouw naam"
-                                 />
-                                
+                                    placeholder="Jouw naam"/>
                                 <i class="fas fa-exclamation-circle failure-icon"></i>
                                 <i class="far fa-check-circle success-icon"></i>
-                                
                                 <div class="error"></div>
                             </div>
+
                             <div>
                                 <label for="email">Email</label>
                                 <i class="far fa-envelope"></i>
-                                
                                 <input
                                     type="text"
                                     name="email"
                                     id="email"
-                                    placeholder="abc@gmail.com"
-                                 />
-                                
+                                    placeholder="abc@gmail.com"/>
                                 <i class="fas fa-exclamation-circle failure-icon"></i>
                                 <i class="far fa-check-circle success-icon"></i>
-                                
                                 <div class="error"></div>
-                            
                             </div>
+
                             <div>
                                 type="text"
-                                    <label for="bericht">Bericht</label>
+                                <label for="bericht">Bericht</label>
                                 <i class="far fa-envelope"></i>
-                                
                                 <textarea class="form" 
                                     name="bericht"
                                     id="bericht"
-                                    placeholder="jouw bericht" style="height: 10rem"></textarea>
-
-                                 
-                                
+                                    placeholder="jouw bericht" style="height: 10rem">
+                                </textarea>
                                 <i class="fas fa-exclamation-circle failure-icon"></i>
                                 <i class="far fa-check-circle success-icon"></i>
-                                
-                                                           </div>
-                  </div>       
+                            </div> 
                            
-                            <button id="btn" type="submit">Submit</button>
-                           
-                           
-                        </form>
-                     </div>
+                        <button id="btn" type="submit">Submit</button>
+
+
+                           <!-- test begin  -->
+                           <div>
+                                <input type="text" placeholder="test">
+                            </div>
+                           <!-- test einde  -->        
+
+
+                        </div>  
+                </form>                     
+                <!-- einde van het formfulier  -->            
+
+                     <!--</div>  deze weggehaald. -->
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
