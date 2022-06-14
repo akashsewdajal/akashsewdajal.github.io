@@ -16,15 +16,15 @@
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" /><!-- deze aanpassen ivm met prod en test -->
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206293705-2">
-        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSCV87ELXL"></script>
         <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-206293705-2');
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-MSCV87ELXL');
         </script>
        <style type="text/css">
     * {
@@ -33,7 +33,7 @@
   box-sizing: border-box;
 }
 
-form {
+#form1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +42,7 @@ form {
   padding: 50px;
 }
 
-form div input, textarea {
+#form1 div input, textarea {
   width: 100%;
   height: 40px;
   border-radius: 8px;
@@ -57,7 +57,7 @@ label {
   margin-bottom: 5px;
 }
 
-form div {
+#form1 div {
   position: relative;
   margin-bottom: 15px;
 }
@@ -66,11 +66,11 @@ input:focus, textarea:focus {
   border: 2px solid #f2796e;
 }
 
-form div i {
+#form1 div i {
   position: absolute;
-  padding: 0px;
+  padding: 10px;
   padding:10px;
-  border: 2px solid yellow;
+  border: 2px solid red;
   float: left;
 
 
@@ -268,19 +268,12 @@ button {
                     <div class="col-lg-8 col-xl-6 text-center">
                         <h2 class="mt-0">Contactformulier</h2>
                         <hr class="divider" />
-                        <p class="text-muted mb-5">Klaar om met ons in zee te gaan, vul het formulier in met uw vraag en we nemen zo snel contact met u op.</p>
+                        <p class="text-muted mb-5">Voor vrijblijvende informatie, vul het formulier in met uw vraag en we nemen zo snel contact met u op.</p>
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div class="col-lg-6">
-                        <!-- * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign u<div class="container">p at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="form1" class="form">
+                        <form id="form1" >
                             
                 
                             <div>
@@ -317,26 +310,24 @@ button {
                             
                             </div>
                             <div>
-                                type="text"
-                                    <label for="bericht">Bericht</label>
+
+                                <label for="bericht">Bericht</label>
                                 <i class="far fa-envelope"></i>
-                                
+                              
                                 <textarea class="form" 
                                     name="bericht"
                                     id="bericht"
                                     placeholder="jouw bericht" style="height: 10rem"></textarea>
 
-                                 
-                                
                                 <i class="fas fa-exclamation-circle failure-icon"></i>
                                 <i class="far fa-check-circle success-icon"></i>
-                                
-                                                           </div>
+                                                         
                   </div>       
                            
-                            <button id="btn" type="submit">Submit</button>
-                           
-                           
+                            <button id="btn" type="submit">Verzenden</button>
+                            <!-- dit is een test -->
+                            <div><input type="text" ></input></div>
+                            <!-- einde van de test. -->
                         </form>
                      </div>
                 </div>
@@ -350,7 +341,7 @@ button {
         </section>
         <!-- Footer-->
         <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - Company Name</div></div>
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - CV monteurs</div></div>
         </footer>
             <!-- Bootstrap core JS-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

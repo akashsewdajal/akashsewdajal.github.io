@@ -1,0 +1,141 @@
+<head>
+<style type="text/css">
+
+
+#form1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  #box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+
+#form1 div input, textarea {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: 4px solid #c4cf
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#form1 div {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid #f2796e;
+}
+
+#form1 div i {
+  position: absolute;
+  padding: 10px;
+  padding:10px;
+  border: 2px solid red;
+  float: left;
+
+
+}
+
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+.success-icon,
+.failure-icon {
+  right: 100;
+  opacity: 100;
+}
+button {
+  margin-top: 15px;
+  width: 100%;
+  height: 45px;
+  background-color: #f2796e;
+  border: 2px solid #f2796e;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+    </style>
+    
+    </head>
+    <body>
+ <form id="form1" >
+                            
+                
+                            <div>
+                                <label for="username">Naam</label>
+                                <i class="fas fa-user"></i>
+                                
+                                <input
+                                    type="text"
+                                    name="username"
+                                    id="username"
+                                    placeholder="Jouw naam"
+                                 />
+                                
+                                <i class="fas fa-exclamation-circle failure-icon"></i>
+                                <i class="far fa-check-circle success-icon"></i>
+                                
+                                <div class="error"></div>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <i class="far fa-envelope"></i>
+                                
+                                <input
+                                    type="text"
+                                    name="email"
+                                    id="email"
+                                    placeholder="abc@gmail.com"
+                                 />
+                                
+                                <i class="fas fa-exclamation-circle failure-icon"></i>
+                                <i class="far fa-check-circle success-icon"></i>
+                                
+                                <div class="error"></div>
+                            
+                            </div>
+                            <div>
+
+                                <label for="bericht">Bericht</label>
+                                <i class="far fa-envelope"></i>
+                              
+                                <textarea class="form" 
+                                    name="bericht"
+                                    id="bericht"
+                                    placeholder="jouw bericht" style="height: 10rem"></textarea>
+
+                                <i class="fas fa-exclamation-circle failure-icon"></i>
+                                <i class="far fa-check-circle success-icon"></i>
+                                                         
+                  </div>       
+                           
+                            <button id="btn" type="submit">Verzenden</button>
+                            <!-- dit is een test -->
+                            <div><input type="text" ></input></div>
+                            <!-- einde van de test. -->
+                        </form>
+
+
+    </body>
